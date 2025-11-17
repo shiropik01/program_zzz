@@ -1,0 +1,18 @@
+print ("Цвета колеса рулетки")
+nomber = int(input("Введите номер кармана от 0 до 36: "))
+if nomber < 0 or nomber > 36:
+    print("Ошибка ввода, введите число от 0 до 36")
+    exit()
+elif nomber == 0:
+    print("Зеленый")
+else:
+    if (1 <= nomber <= 10) or (19 <= nomber <= 28):
+        if nomber % 2 == 1:
+            print("Краcный")
+        else:
+            print("Черный")
+    else:
+        if nomber % 2 == 1:
+                print("Черный")
+        else:
+            print("Красный")
